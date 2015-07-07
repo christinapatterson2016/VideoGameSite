@@ -7,7 +7,7 @@
         'app.ps4',
         'app.xbox-one',
         'app.wii-u',
-        'app.mobile'
+        'app.pc'
     ]);
 
     function config($stateProvider, $urlRouterProvider) {

@@ -27,11 +27,11 @@
                     }
                 }
             })
-            .state('app.wii-u.accessories', {
-                url: '/accessories',
+            .state('app.wii-u.walkthroughs', {
+                url: '/walkthroughs',
                 views: {
                     'content@': {
-                        templateUrl: 'app/wii-u/wii-u-accessories.html'
+                        templateUrl: 'app/wii-u/wii-u-walkthroughs.html'
                     }
                 }
             })

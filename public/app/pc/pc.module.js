@@ -1,45 +1,45 @@
 (function () {
-    var module = angular.module('app.mobile', []);
-// This is how you load the mobile page
+    var module = angular.module('app.pc', []);
+// This is how you load the pc page
     function config($stateProvider) {
         $stateProvider
-            .state('app.mobile', {
-                url: '/mobile',
+            .state('app.pc', {
+                url: '/pc',
                 views: {
                     'content@': {
-                        templateUrl: 'app/mobile/mobile.html'
+                        templateUrl: 'app/pc/pc.html'
                     }
                 }
             })
-            .state('app.mobile.overview', {
+            .state('app.pc.overview', {
                 url: '/overview',
                 views: {
                     'content@': {
-                        templateUrl: 'app/mobile/mobile-overview.html'
+                        templateUrl: 'app/pc/pc-overview.html'
                     }
                 }
             })
-            .state('app.mobile.games', {
+            .state('app.pc.games', {
                 url: '/games',
                 views: {
                     'content@': {
-                        templateUrl: 'app/mobile/mobile-games.html'
+                        templateUrl: 'app/pc/pc-games.html'
                     }
                 }
             })
-            .state('app.mobile.accessories', {
-                url: '/accessories',
+            .state('app.pc.walkthroughs', {
+                url: '/walkthroughs',
                 views: {
                     'content@': {
-                        templateUrl: 'app/mobile/mobile-accessories.html'
+                        templateUrl: 'app/pc/pc-walkthroughs.html'
                     }
                 }
             })
-            .state('app.mobile.news', {
+            .state('app.pc.news', {
                 url: '/news',
                 views: {
                     'content@': {
-                        templateUrl: 'app/mobile/mobile-news.html'
+                        templateUrl: 'app/pc/pc-news.html'
                     }
                 }
             });

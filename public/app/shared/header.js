@@ -13,14 +13,14 @@
             "ion-playstation",
             "ion-xbox",
             "ion-ios-game-controller-a",
-            "ion-iphone"
+            "ion-monitor"
         ];
 
         vm.consoles = [
             "ps4",
             "xbox-one",
             "wii-u",
-            "mobile"
+            "pc"
 
         ];
 

@@ -32,16 +32,16 @@
         <div class="container">
             <ul class="nav navbar-nav collapse navbar-collapse">
                 <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/overview')}" ng-show="vm.state === i">
-                    <a ui-sref="app.{{vm.consoles[i]}}.overview"><i class="fa fa-table"></i> Overview</a>
+                    <a ui-sref="app.{{vm.consoles[i]}}.overview"><i class="glyphicon glyphicon-list-alt"></i> Overview</a>
                 </li>
                 <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/games')}" ng-show="vm.state === i">
-                    <a ui-sref="app.{{vm.consoles[i]}}.games"><i class="fa fa-trophy"></i> Games</a>
+                    <a ui-sref="app.{{vm.consoles[i]}}.games"><i class="ion-ios-game-controller-b"></i> Games</a>
                 </li>
-                <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/accessories')}" ng-show="vm.state === i">
-                    <a ui-sref="app.{{vm.consoles[i]}}.accessories"><i class="ion-clipboard"></i> Accessories</a>
+                <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/walkthroughs')}" ng-show="vm.state === i">
+                    <a ui-sref="app.{{vm.consoles[i]}}.walkthroughs"><i class="fa fa-user-secret"></i> Walkthroughs</a>
                 </li>
                 <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/news')}" ng-show="vm.state === i">
-                    <a ui-sref="app.{{vm.consoles[i]}}.news"><i class="fa fa-users"></i> News</a>
+                    <a ui-sref="app.{{vm.consoles[i]}}.news"><i class="fa fa-newspaper-o"></i> News</a>
                 </li>
             </ul>
         </div>

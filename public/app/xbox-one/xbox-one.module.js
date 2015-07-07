@@ -27,11 +27,11 @@
                     }
                 }
             })
-            .state('app.xbox-one.accessories', {
-                url: '/accessories',
+            .state('app.xbox-one.walkthroughs', {
+                url: '/walkthroughs',
                 views: {
                     'content@': {
-                        templateUrl: 'app/xbox-one/xbox-one-accessories.html'
+                        templateUrl: 'app/xbox-one/xbox-one-walkthroughs.html'
                     }
                 }
             })

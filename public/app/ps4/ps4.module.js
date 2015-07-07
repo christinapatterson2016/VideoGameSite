@@ -27,11 +27,11 @@
                     }
                 }
             })
-            .state('app.ps4.accessories', {
-                url: '/accessories',
+            .state('app.ps4.walkthroughs', {
+                url: '/walkthroughs',
                 views: {
                     'content@': {
-                        templateUrl: 'app/ps4/ps4-accessories.html'
+                        templateUrl: 'app/ps4/ps4-walkthroughs.html'
                     }
                 }
             })
