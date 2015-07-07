@@ -10,10 +10,10 @@
         };
 
         vm.glyphs = [
-            "ion-ios-americanfootball-outline",
-            "ion-ios-baseball-outline",
-            "ion-ios-basketball-outline",
-            "ion-ios-football-outline"
+            "ion-playstation",
+            "ion-xbox",
+            "ion-ios-game-controller-a",
+            "ion-iphone"
         ];
 
         vm.consoles = [
