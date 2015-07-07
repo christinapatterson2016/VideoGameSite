@@ -1,0 +1,116 @@
+@import "variables.less";
+h1 {
+    color: #FFFFFF;
+}
+
+body {
+    padding-bottom: 70px;
+    background-color: @main-blue;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+
+.navbar-brand {
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+}
+
+.SportAssociationLogos {
+    margin-top: 30px;
+}
+
+.teams {
+    margin-top: 20px;
+}
+
+.teams-header {
+    text-align: center;
+}
+
+#scores {
+    background-color: #EEE;
+    padding-top: 10px;
+    border-bottom: thick solid black;
+}
+
+#carousel-example-generic {
+    margin-top: 35px;
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#headlines {
+    margin-top: 20px;
+}
+
+.table{
+    margin-top: 10px;
+}
+
+.selectedBlue {
+  background-color: #337ab7;
+  cursor:pointer
+}
+
+.selectedRed {
+  background-color: #f2dede;
+  cursor:pointer
+}
+
+
+.hover {
+    transition: all .2s ease-in-out;
+}
+
+.hover:hover {
+    cursor: pointer;
+    font-size: 28px;
+    transform: scale(1.3);
+}
+
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}

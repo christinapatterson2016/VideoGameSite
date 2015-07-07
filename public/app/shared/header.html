@@ -1,0 +1,57 @@
+<div ng-controller="HeaderCtrl as vm">
+    <div role="navigation" class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" ng-click="vm.setState(4)" ui-sref="app.home">Video Game Application</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.state === i}">
+                        <a ng-click="vm.setState(i)" ui-sref="app.{{vm.consoles[i]}}"><i class="{{vm.glyphs[i]}}"></i> {{vm.consoles[i] | uppercase}}</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="mailto:gsabpa@buchanan-edwards.com?subject=RFQ-4QTFHS150004"><i class="fa fa-envelope-o"></i> Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/christinapatterson2016/VideoGameSite" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div role="navigation" class="navbar navbar-default" ng-show="vm.state !== 4">
+    <!-- what pops up when you click on each thing in the nav bar -->
+        <div class="container">
+            <ul class="nav navbar-nav collapse navbar-collapse">
+                <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/overview')}" ng-show="vm.state === i">
+                    <a ui-sref="app.{{vm.consoles[i]}}.overview"><i class="fa fa-table"></i> Overview</a>
+                </li>
+                <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/games')}" ng-show="vm.state === i">
+                    <a ui-sref="app.{{vm.consoles[i]}}.games"><i class="fa fa-trophy"></i> Games</a>
+                </li>
+                <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/accessories')}" ng-show="vm.state === i">
+                    <a ui-sref="app.{{vm.consoles[i]}}.accessories"><i class="ion-clipboard"></i> Accessories</a>
+                </li>
+                <li ng-repeat="i in [0, 1, 2, 3]" ng-class="{ active: vm.isActive('/{{vm.consoles[i]}}/news')}" ng-show="vm.state === i">
+                    <a ui-sref="app.{{vm.consoles[i]}}.news"><i class="fa fa-users"></i> News</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- 
+    This is the nav bar widget add in  -->
+
+    <!-- <div class="hidden-xs" id="scores">
+        <div class="container">
+            <iframe src="http://www.sportsnetwork.com/aspdata/clients/sportsnetwork/pullouts/scrollscores.html" width="100%" height="70" scrolling="no" frameborder="0"></iframe>
+        </div>
+    </div> -->
+</div>
